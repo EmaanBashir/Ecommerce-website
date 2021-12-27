@@ -297,9 +297,6 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero .container-fluid{
-  height: 100vh;
-}
 .hero a {
   font-family: Source Serif Pro;
   font-weight: bold;
@@ -311,29 +308,37 @@ section {
   letter-spacing: 2px;
 }
 
-.hero h2 {
+.hero h2{
   font-family: Source Serif Pro;
+  font-weight: normal;
   font-size: 27px;
-  color: rgba(149,106,106,1);
 }
 
-.hero button{
-  color: rgba(255,248,248,1);
+.hero h3{
+  font-family: Source Serif Pro;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 13px;
+}
+
+.hero .card{
+  background-color: rgba(255,248,248,1);
+  font-family: Source Serif Pro;
+  border-radius: 15px;
+  width: 375px;
+  box-shadow: 2px 2px 5px 3px rgba(149,106,106,0.25);
+}
+
+.hero .card img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 400px;
+}
+
+.hero .card:hover{
   background-color: rgba(149,106,106,1);
-  font-family: Source Serif Pro;
-  font-weight: SemiBold;
-  font-size: 27px;
-  width: 230px;
-  height: 80px;
-  border: none;
+  color: rgba(255,248,248,1);
 }
-
-.hero button:hover{
-  background-color: rgba(160,120,120,1);
-}
-
-
-
 
 /*--------------------------------------------------------------
 # Footer

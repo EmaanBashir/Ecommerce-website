@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -23,19 +19,19 @@
 
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../vendor/bootstrap-social/bootstrap-social.css">
+  <link href = "{{ asset('vendor/bootstrap-social/bootstrap-social.css') }}" rel = "stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href = "{{ asset('vendor/animate.css/animate.min.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/glightbox/css/glightbox.min.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/remixicon/remixicon.css') }}" rel = "stylesheet">
+  <link href = "{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel = "stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Hidayah - v4.7.0
@@ -46,30 +42,7 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="position-absolute w-100">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="text-white">Flores Amor</span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="#">Categories</a></li>
-          <li><a class="nav-link scrollto" href="#">Event Decor</a></li>
-          <li><a class="nav-link scrollto" href="#">Gifts</a></li>
-          <li><a class="nav-link scrollto" href="../aboutUs/index.html">About</a></li>
-          <li><a class="nav-link scrollto" href="../SignIn/index.html">Sign In</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
+    @include('layouts.navbarWhite')
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -77,7 +50,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.png)">
+        <div class="carousel-item active" style="background-image: url('{{ asset('img/home/slide/slide-1.png')}}');">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
@@ -87,7 +60,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.png)">
+        <div class="carousel-item" style="background-image: url('{{ asset('img/home/slide/slide-2.png')}}');">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</span></h2>
@@ -97,7 +70,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.png)">
+        <div class="carousel-item" style="background-image: url('{{ asset('img/home/slide/slide-3.png')}}');">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</span></h2>
@@ -107,7 +80,7 @@
         </div>
 
         <!-- Slide 4 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-4.png)">
+        <div class="carousel-item" style="background-image: url('{{ asset('img/home/slide/slide-4.png')}}');">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
@@ -117,7 +90,7 @@
         </div>
 
         <!-- Slide 5 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-5.png)">
+        <div class="carousel-item" style="background-image: url('{{ asset('img/home/slide/slide-5.png')}}');">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
@@ -153,7 +126,7 @@
           <div class="row mt-5">
             <div
               class="col-xl-4 col-lg-4 video-box d-flex justify-content-center align-items-stretch position-relative">
-              <img src="assets/img/weddings/pic1.png" class="glightbox img-fluid h-75 mb-4">
+              <img src="{{ asset('img/home/weddings/pic1.png') }}" class="glightbox img-fluid h-75 mb-4">
               <div class="h-75 w-75 wed-1 position-absolute"></div>
             </div>
 
@@ -173,15 +146,15 @@
             </div>
 
             <div class="row mt-5">
-              <img src="assets/img/weddings/pic2.png" class="col-lg-6 m-0 p-0 img-fluid">
+              <img src="{{ asset('img/home/weddings/pic2.png') }}" class="col-lg-6 m-0 p-0 img-fluid">
               <div class="col-lg-6">
                 <div class="row">
-                  <img src="assets/img/weddings/pic3.png" alt="" class="col-6 m-0 p-0 img-fluid">
-                  <img src="assets/img/weddings/pic4.png" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/weddings/pic3.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/weddings/pic4.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
                 </div>
                 <div class="row">
-                  <img src="assets/img/weddings/pic5.png" alt="" class="col-6 m-0 p-0 img-fluid">
-                  <img src="assets/img/weddings/pic2.png" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/weddings/pic5.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/weddings/pic2.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
                 </div>
               </div>
             </div>
@@ -200,7 +173,7 @@
           <div class="row mt-5">
             <div
               class="col-xl-4 col-lg-4 video-box d-flex justify-content-center align-items-stretch position-relative">
-              <img src="assets/img/birthdays/pic1.png" class="glightbox img-fluid h-75 mb-4">
+              <img src="{{ asset('img/home/birthdays/pic1.png') }}" class="glightbox img-fluid h-75 mb-4">
               <div class="h-75 w-75 wed-2 position-absolute"></div>
             </div>
 
@@ -219,15 +192,15 @@
             </div>
 
             <div class="row mt-5">
-              <img src="assets/img/birthdays/pic2.png" class="col-lg-6 m-0 p-0 img-fluid">
+              <img src="{{ asset('img/home/birthdays/pic2.png') }}" class="col-lg-6 m-0 p-0 img-fluid">
               <div class="col-lg-6">
                 <div class="row">
-                  <img src="assets/img/birthdays/pic2.png" alt="" class="col-6 m-0 p-0 img-fluid">
-                  <img src="assets/img/birthdays/pic2.png" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/birthdays/pic2.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/birthdays/pic2.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
                 </div>
                 <div class="row">
-                  <img src="assets/img/birthdays/pic2.png" alt="" class="col-6 m-0 p-0 img-fluid">
-                  <img src="assets/img/birthdays/pic2.png" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/birthdays/pic2.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
+                  <img src="{{ asset('img/home/birthdays/pic2.png') }}" alt="" class="col-6 m-0 p-0 img-fluid">
                 </div>
               </div>
             </div>
@@ -256,56 +229,24 @@
     </section>
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-xl-10">
-            <div class="row">
-
-              <div class="col-lg-6 footer-links footer-newsletter">
-                <h2>Subscribe to our weekly newsletter:</h2>
-                <form action="#" class = "col-xl-6 col-lg-8 col-md-6 col-sm-8 col-10">
-                  <input type="email" placeholder="xyc@abc.com">
-                </form>
-                <h3>Connect with us
-                  <a href="#" class="facebook text-white"><i class="fa fa-facebook-f"></i></a>
-                  <a href="#" class="instagram text-white"><i class="bi bi-instagram"></i></a>
-                  <a href="#" class="twitter text-white"><i class="bi bi-twitter"></i></a>
-                </h3>
-              </div>
-              <div class="col-lg-2"></div>
-              <div class="col-lg-4 footer-links">
-                <h2>Contact Us</h2>
-                <h3><i class="fa fa-phone text-white"></i>&nbsp;: +923216010102</h3>
-                <h3><i class="fa fa-envelope text-white"></i>&nbsp;: flores@gmail.com</h3>
-                <h3><i class="fa fa-location-arrow text-white"></i>&nbsp;: location</h3>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
+    @include('layouts.footer')
+
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src = "{{ asset('vendor/purecounter/purecounter.js') }}"></script>
+  <script src = "{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src = "{{ asset('vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src = "{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src = "{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src = "{{ asset('vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src = "{{ asset('vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src = "{{ asset('js/home.js') }}"></script>
 
 </body>
 
