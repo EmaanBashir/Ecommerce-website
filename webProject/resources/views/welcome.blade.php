@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href = "{{ asset('vendor/bootstrap-social/bootstrap-social.css') }}" rel = "stylesheet">
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
   <!-- Vendor CSS Files -->
   <link href = "{{ asset('vendor/animate.css/animate.min.css') }}" rel = "stylesheet">
   <link href = "{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel = "stylesheet">
@@ -31,7 +34,9 @@
   <link href = "{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel = "stylesheet">
 
   <!-- Template Main CSS File -->
+  <link href="{{ asset('css/navbarWhite.css') }}" rel="stylesheet">
   <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Hidayah - v4.7.0
@@ -54,7 +59,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
-              <a href = "#" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
+              <a href = "{{ route('steps') }}" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -64,7 +69,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</span></h2>
-              <a href = "#" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
+              <a href = "{{ route('steps') }}" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -74,7 +79,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</span></h2>
-              <a href = "#" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
+              <a href = "{{ route('steps') }}" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -84,7 +89,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
-              <a href = "#" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
+              <a href = "{{ route('steps') }}" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -94,7 +99,7 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Make your day glorious with Flores Amor</h2>
-              <a href = "#" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
+              <a href = "{{ route('steps') }}" class="mt-3 btn-get-started animated fadeInUp scrollto">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -245,7 +250,6 @@
   <script src = "{{ asset('vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src = "{{ asset('js/home.js') }}"></script>
 
 </body>

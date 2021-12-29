@@ -15,10 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/aboutus', function () {
+    return view('aboutus');
+})->name('aboutus');
+
 require __DIR__.'/auth.php';
+require __DIR__.'/steps.php';
+require __DIR__.'/account.php';
