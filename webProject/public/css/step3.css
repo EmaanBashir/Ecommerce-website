@@ -242,7 +242,7 @@ section {
 }
 
 .hero form textarea::placeholder, .hero form input::placeholder{
-  color: rgba(149, 106, 106, 1);
+  color: rgba(149, 106, 106, 0.65);
   font-weight: 200;
   font-family: Source Serif Pro;
   font-size: 23px;

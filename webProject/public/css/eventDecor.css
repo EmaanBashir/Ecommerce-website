@@ -1,0 +1,164 @@
+/**
+* Template Name: Hidayah - v4.7.0
+* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  background-color: rgba(255,248,248,1);
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6aa3d5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 30px 10%;
+}
+
+.section-bg {
+  background-color: #fafafb;
+}
+
+.section-title {
+  padding-bottom: 50px;
+}
+.section-title h2 {
+  margin: 30px 0 0 0;
+  color: rgba(149,106,106,1);
+  font-family: Source Serif Pro;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.section-title h4 {
+  margin: 15px 0 0 0;
+  color: rgba(149,106,106,1);
+  font-family: Source Serif Pro;
+  font-size: 30px;
+}
+
+.section-title p {
+  margin: 0 auto;
+  font-family: Source Serif Pro;
+  font-weight: Regular;
+  font-size: 22px;
+  color: rgba(149,106,106,1);
+}
+
+.section-title a{
+  transition: 0.5s;
+  color: rgba(255,255,255,1);
+  background: rgba(149,106,106,1);
+}
+
+.section-title a:hover{
+  color: rgba(255,255,255,1);
+  background: rgba(160,120,120,1);
+}
+
+.section-title a span{
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.event-title h3{
+  color: rgba(149,106,106,1);
+  font-family: "Tangerine", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.event-title div{
+  margin-bottom: 27px;
+  border-bottom: 3px solid rgba(149,106,106,1);
+}
+
+.wedding p {
+  margin: 0 auto;
+  font-family: Source Serif Pro;
+  font-weight: Regular;
+  font-size: 20px;
+  color: rgba(149,106,106,1);
+}
+
+.wedding img{
+  height: 48vh;
+  object-fit: cover;
+}
+
+.services .save{
+  color: rgba(255,248,248,1);
+  background-color:rgba(149,106,106,1);
+  font-family: Source Serif Pro;
+  font-weight: SemiBold;
+  font-size: 27px;
+  width: 220px;
+  height: 65px;
+  border: none;
+}
+
+.services .save:hover{
+  background-color:rgba(160,120,120,1);
+}
+
+@media (max-width: 991px) {
+  .wedding a span, .wedding p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding a span, .wedding p {
+    font-size: 19px;
+  }
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -7,62 +7,69 @@
 */
 .login,
 .image {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .bg-image {
-  background-size: fill;
-  background-position: center center;
+    background-size: fill;
+    background-position: center center;
 }
 
-.bg-image h1{
-    color: rgba(255,248,248,1);
+.bg-image h1 {
+    color: rgba(255, 248, 248, 1);
     font-family: 'Tangerine';
     font-weight: bold;
     font-size: 85px;
     letter-spacing: 1px;
 }
 
-.bg-image h2{
+.bg-image h2 {
     font-family: Source Serif Pro;
     font-size: 25px;
     padding: 0 10%;
 }
 
 
-.bg-image > div{
+.bg-image>div {
     margin-top: -70px;
 }
 
-.bg-image .text-pink{
-    color: rgba(255,248,248,1);
+.bg-image .text-pink {
+    color: rgba(255, 248, 248, 1);
 }
 
-.content{
-    background-color: rgba(255,248,248,1);
+.content {
+    background-color: rgba(255, 248, 248, 1);
 }
 
-.signup{
-    color: rgba(149,106,106,1);
+.content h4 {
+    font-family: Source Serif Pro;
+    font-size: 30px;
+    padding: 0 10%;
+    color: rgba(149, 106, 106, 1);
+}
+
+.signup {
+    color: rgba(149, 106, 106, 1);
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     font-family: Source Serif Pro;
     font-weight: SemiBold;
     font-size: 45px;
 }
 
-.login form .input{
-    color: rgba(149,106,106,1);
+.login form .input {
+    color: rgba(149, 106, 106, 1);
     font-family: Source Serif Pro;
     font-weight: Regular;
     font-size: 21px;
-    border: 3px solid rgba(149,106,106,1);
-    background-color: rgba(255,248,248,1);
-    color: rgba(149,106,106,1);
+    border: 3px solid rgba(149, 106, 106, 1);
+    background-color: rgba(255, 248, 248, 1);
+    color: rgba(149, 106, 106, 1);
 }
 
-.login form .skip, .login form .save{
-    color: rgba(255,248,248,1);
-    background-color:rgba(164,164,164,1);
+.login form .skip, .login form .save {
+    color: rgba(255, 248, 248, 1);
+    background-color: rgba(164, 164, 164, 1);
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
     font-family: Source Serif Pro;
     font-weight: SemiBold;
@@ -70,65 +77,93 @@
     width: 40%;
 }
 
-.login form .skip:hover{
-    background-color:rgba(128, 128, 128 ,1);
+.login form .skip:hover {
+    background-color: rgba(128, 128, 128, 1);
 }
 
-.login form .save{
-    background-color:rgba(52, 168, 83 ,1);
+.login form .save {
+    background-color: rgba(52, 168, 83, 1);
 }
 
-.login form .save:hover{
-    background-color:rgba(23, 108, 55 ,1);
+.login form .save:hover {
+    background-color: rgba(23, 108, 55, 1);
 }
 
-.continue p{
-    color: rgba(149,106,106,1);
+.continue p {
+    color: rgba(149, 106, 106, 1);
     font-family: Source Serif Pro;
     font-weight: SemiBold;
     font-size: 21px;
 }
 
-.content .home{
-    color: rgba(149,106,106,1);
+.content .home {
+    color: rgba(149, 106, 106, 1);
     right: 60px;
     position: absolute;
 }
 
-.edit-icon{
+.edit-icon {
     width: 70px;
 }
 
-.back-arrow{
+.back-arrow {
     font-size: 40px;
 }
 
-.content table{
-    border: 2px solid rgba(149,106,106,1);
+.content table {
+    border: 2px solid rgba(149, 106, 106, 1);
     height: 50vh;
 }
 
-.content table thead{
-    border-bottom: 2px solid rgba(149,106,106,1);
+.content table thead {
+    border-bottom: 2px solid rgba(149, 106, 106, 1);
 }
 
-.content table td, .content table th{
-    border-right: 1px solid rgba(149,106,106,1);
-    border-left: 1px solid rgba(149,106,106,1);
+.content table td, .content table th {
+    border-right: 1px solid rgba(149, 106, 106, 1);
+    border-left: 1px solid rgba(149, 106, 106, 1);
     font-family: Source Serif Pro;
     font-size: 23px;
     font-weight: normal;
-    color: rgba(149,106,106,1);
+    color: rgba(149, 106, 106, 1);
     padding: 12px 0;
 }
 
-
-
-.content .approved{
-    background-color: rgba(52, 168, 83 ,1);
-    color: rgba(255,248,248,1);
+.content .pending {
+    background-color: rgba(128, 128, 128, 1);
+    color: rgba(255, 248, 248, 1);
     font-family: Source Serif Pro;
     font-size: 23px;
 }
 
+.content .approved {
+    background-color: rgba(52, 168, 83, 1);
+    color: rgba(255, 248, 248, 1);
+    font-family: Source Serif Pro;
+    font-size: 23px;
+}
 
+.content .approved:hover, .content .pending:hover {
+    cursor: pointer;
+}
+
+.content .save {
+    color: rgba(255, 248, 248, 1);
+    background-color: rgba(149, 106, 106, 1);
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    font-size: 20px;
+    width: 180px;
+    height: 55px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.content .save:hover {
+    background-color: rgba(160, 120, 120, 1);
+}
+
+ .content .vertical-scrollable{
+    overflow: auto;
+    max-height: 85vh;
+}

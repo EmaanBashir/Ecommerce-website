@@ -9,8 +9,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="#">Categories</a></li>
-          <li><a class="nav-link scrollto" href="#">Event Decor</a></li>
+          <li><a class="nav-link scrollto" href="{{route('eventDecor')}}">Event Decor</a></li>
           <li><a class="nav-link scrollto" href="#">Gifts</a></li>
           <li><a class="nav-link scrollto" href="{{ route('aboutus') }}">About</a></li>
           <li>

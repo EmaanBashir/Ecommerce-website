@@ -1,0 +1,67 @@
+.stepwizard-step p {
+    margin-top: 10px;
+    font-family: Source Serif Pro; 
+    color: white;
+  font-size: 18px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    /* z-order: 0; */
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.stepwizard-step a {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(149, 106, 106, 1);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+
+a.btn.btn-circle{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 19px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: white;
+}
+
+
+
+a .btn-circle{
+    border: 2px solid white;
+border-radius: 15px;
+}
+

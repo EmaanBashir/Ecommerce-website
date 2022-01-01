@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 Route::get('/aboutus', function () {
     return view('aboutus');
 })->name('aboutus');
 
+
+
 require __DIR__.'/auth.php';
 require __DIR__.'/steps.php';
 require __DIR__.'/account.php';
+require __DIR__.'/events.php';
+require __DIR__.'/checkout.php';

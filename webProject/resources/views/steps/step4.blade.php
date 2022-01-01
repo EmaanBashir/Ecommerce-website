@@ -87,7 +87,6 @@
     <script src="{{ asset('vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ asset('js/step4.js') }}"></script>
 
 </body>
 

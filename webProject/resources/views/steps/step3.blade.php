@@ -60,70 +60,72 @@
                 <div class="text-center">
                     <h1>BOOK AN EVENT</h1>
                 </div>
-                <div class="container my-4 step2">
-                    <div class="row px-5 my-5">
-                        <h2 class="col-7 float-start">2. Select the theme</h2>
-                        <a href="" class="col-5  float-end text-end">
-                            <h2 class="text-decoration-underline">See More</h2>
-                        </a>
-                    </div>
-                    <div class="row px-4 mx-5 my-5">
-                        <ul class="list">
-                            <li>
-                                <input type="radio" name="weddingType" value="traditional" id="traditional">
-                                <label for="traditional">Traditional Wedding</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="weddingType" value="bohemian" id="bohemian">
-                                <label for="bohemian">Bohemian Wedding</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="weddingType" value="bohemian" id="fairytale">
-                                <label for="fairytale">Fairytale Wedding</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="weddingType" value="bohemian" id="destination">
-                                <label for="destination">Destination Wedding</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="weddingType" value="bohemian" id="minimalistic">
-                                <label for="minimalistic">Minimalistic Wedding</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="weddingType" value="bohemian" id="customized">
-                                <label for="customized">Customized Wedding</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-end px-2 pb-2">
-                        <h1>2 / 6</h1>
-                    </div>
-                </div>
-
-                <form method = "post" action="{{ route('step4') }}">
+                <form method="post" action="{{ route('step4', 'wedding') }}">
                     @csrf
+                    <div class="container my-4 step2">
+                        <div class="row px-5 my-5">
+                            <h2 class="col-7 float-start">2. Select the theme</h2>
+                            <a href="" class="col-5  float-end text-end">
+                                <h2 class="text-decoration-underline">See More</h2>
+                            </a>
+                        </div>
+                        <div class="row px-4 mx-5 my-5">
+                            <ul class="list">
+                                <li>
+                                    <input type="radio" name="theme" value="traditional" id="traditional">
+                                    <label for="traditional">Traditional Wedding</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="theme" value="bohemian" id="bohemian">
+                                    <label for="bohemian">Bohemian Wedding</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="theme" value="bohemian" id="fairytale">
+                                    <label for="fairytale">Fairytale Wedding</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="theme" value="bohemian" id="destination">
+                                    <label for="destination">Destination Wedding</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="theme" value="bohemian" id="minimalistic">
+                                    <label for="minimalistic">Minimalistic Wedding</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="theme" value="bohemian" id="customized">
+                                    <label for="customized">Customized Wedding</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-end px-2 pb-2">
+                            <h1>2 / 6</h1>
+                        </div>
+                    </div>
+
+
+
                     <div class="container my-4 step2">
                         <div class="row px-5 my-5">
                             <h2 class="col-7 float-start">3. Enter the following details</h2>
                         </div>
                         <div class="row px-4 mx-5 my-5">
                             <input type="text" name="location" id="location" placeholder="Place/Location">
-                            <input type="text" name="date" id="date" placeholder="Time - [8:00 pm]">
-                            <input type="text" name="noOfGuests" id="noOfGuests" placeholder="Expected number of guests">
-                            <input type="text" name="photoServices" id="photoServices" placeholder="Do you want our photography services ?">
-                            <textarea name="" id="" cols="30" rows="7" placeholder="Enter a detailed description of what you want on your big day.
+                            <input type="datetime-local" name="time" id="time">
+                            <input type="number" name="guestsExpected" id="guestsExpected" placeholder="Expected number of guests">
+                            <input type="text" name="photography" id="photography" placeholder="Do you want our photography services ?">
+                            <textarea name="description" id="description" cols="30" rows="7" placeholder="Enter a detailed description of what you want on your big day.
 Color scheme, Flowers and everything you want."></textarea>
                         </div>
                         <div class="text-end px-2 pb-2">
                             <h1>3 / 6</h1>
                         </div>
-                        <ul class = "ms-5 ps-5">
+                        <ul class="ms-5 ps-5">
                             <li>
                                 <h3 class="recheck"><i>Kindly recheck the details and click submit</i></h3>
                             </li>
                         </ul>
-                        <div class = "text-center">
-                            <input type="submit" value="Submit" class = "save rounded-pill">
+                        <div class="text-center">
+                            <input type="submit" value="Submit" class="save rounded-pill">
                         </div>
                     </div>
                 </form>

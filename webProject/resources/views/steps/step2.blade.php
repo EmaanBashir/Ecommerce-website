@@ -62,7 +62,7 @@
                 </div>
                 <div class="d-flex flex-row justify-content-between mx-5 px-5 my-4">
                     <h2>Select an event</h2>
-                    <a href=""><i class="bi bi-arrow-right"></i></a>
+                    <a href="#"><i class="bi bi-arrow-right"></i></a>
                 </div>
                 <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                     <a href="{{ route('step3') }}" class="mx-5 my-3">
