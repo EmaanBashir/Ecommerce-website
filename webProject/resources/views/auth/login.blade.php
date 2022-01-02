@@ -69,7 +69,7 @@
                                     </div>
                                     <button type="submit" class="signin-btn btn btn-block mb-2 rounded-pill text-center py-2">Sign In</button>
                                     @if (Route::has('password.request'))
-                                    <a class="signin-text" href="{{ route('password.request') }}">Forgot password?</a>
+                                    <a class="signin-text" href="#">Forgot password?</a>
                                     @endif
 
                                     <p class="signin-text">New Member?<a href="{{route('register')}}" class="signin-text">Create an account</a></p>

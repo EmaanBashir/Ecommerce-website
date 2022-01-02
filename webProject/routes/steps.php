@@ -5,7 +5,7 @@ use App\Http\Controllers\Auth\EventsController;
 
 Route::get('/steps', function () {
     return view('steps.steps');
-})->middleware(['auth'])->name('steps');
+})->name('steps');
 
 Route::get('/steps/1', function () {
     return view('steps.step1');

@@ -6,6 +6,6 @@ use App\Http\Controllers\Auth\EventDetailsController;
 
 Route::get('/eventDecor', function () {
     return view('eventDecor');
-})->middleware(['auth'])->name('eventDecor');
+})->name('eventDecor');
 
 Route::get('/eventDetails/{event_id}', [EventDetailsController::class, 'details'])->middleware(['auth'])->name('eventDetails');

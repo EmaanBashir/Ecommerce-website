@@ -5,9 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GiftController;
 use App\Models\Gift;
 
-Route::get('/gifts', [GiftController::class, 'fetchAll'])->middleware(['auth'])->name('gifts');
+Route::get('/gifts', [GiftController::class, 'fetchAll'])->name('gifts');
 
-Route::get('/gifts/category/{category}', [GiftController::class, 'fetch'])->middleware(['auth'])->name('giftsCategory');
+Route::get('/gifts/category/{category}', [GiftController::class, 'fetch'])->name('giftsCategory');
 
 Route::get('/gifts/cart', [GiftController::class, 'cart'])->middleware(['auth'])->name('giftCart');
 
@@ -21,5 +21,5 @@ Route::get('/gifts/orderHistory', [GiftController::class, 'history'])->middlewar
 
 Route::post('/gifts/{gift_id}', [GiftController::class, 'store'])->middleware(['auth']);
 
-Route::get('/gifts/{gift_id}', [GiftController::class, 'create'])->middleware(['auth'])->name('giftPage');
+Route::get('/gifts/{gift_id}', [GiftController::class, 'create'])->name('giftPage');
 
