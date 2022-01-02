@@ -86,7 +86,7 @@
                                         <tr onclick="window.location='{{ route("eventDetails", $order) }}'">
                                             <td>{{$order->type}}</td>
                                             <td>{{$order->theme}}</td>
-                                            <td>{{$order->status?'Rs.'.$order->price->price:''}}</td>
+                                            <td>Rs. {{$order->price->price}}</td>
                                             <td><span class="{{$order->status?'approved':'pending'}} rounded px-3 py-1">{{$order->status?'Approved':'Pending'}}</span></td>
                                         </tr>
                                         @endforeach

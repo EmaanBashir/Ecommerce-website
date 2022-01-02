@@ -43,7 +43,6 @@
         <div class="row no-gutter">
             <!-- The image half -->
             <div style="background-image: url('{{ asset('img/account/Frame 39.png')}}');" class="col-md-5 d-none d-md-flex flex-column text-center align-items-center justify-content-evenly bg-image">
-                <div class="text-start w-100"><a href="{{ url()->previous() }}" class="back-arrow"><i class="text-white fa fa-angle-left px-3"></i></a></div>
                 <h1>Flores Amor</h1>
                 <h2>Everything you need to make your special day extraordinary</h2>
                 <h2>Join us to receive a free new comer gift box</h2>
