@@ -5,15 +5,21 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 :root {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Source Serif Pro", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgba(149, 106, 106, 1);
     background-color: rgba(255, 248, 248, 1);
 }
@@ -26,14 +32,21 @@ a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Source Serif Pro;
     text-align: center;
 }
 
+
 /*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
+    # Sections
+    --------------------------------------------------------------*/
+
 section {
     padding: 20px 0;
     overflow: hidden;
@@ -62,9 +75,11 @@ section {
     }
 }
 
+
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+    # Breadcrumbs
+    --------------------------------------------------------------*/
+
 .breadcrumbs {
     padding: 15px 0;
     background: #012970;
@@ -113,9 +128,11 @@ section {
     content: "/";
 }
 
+
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+    # Back to top button
+    --------------------------------------------------------------*/
+
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -146,150 +163,103 @@ section {
     opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+    # Disable aos animation delay on mobile devices
+    --------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
 }
 
+
 /*--------------------------------------------------------------
-# Checkout
---------------------------------------------------------------*/
+    # Checkout
+ --------------------------------------------------------------*/
 
-.checkout {
-    background: rgba(149, 106, 106, 1);
+.checkout{
+    background-color: rgba(149, 106, 106, 1);
 }
 
-.ctable table {
-    display: block;
-    margin: auto;
-    padding: 5px;
-}
-
-.checkout table td:nth-child(2) {
-    text-align: center;
+.checkout hr {
+    border: 1px solid white;
 }
 
 .checkout .hero h1 {
     letter-spacing: 2px;
     font-size: 27px;
     font-weight: bold;
-    color: white;
+    color: rgba(255, 248, 248, 1);
 }
 
-.checkout .hero td {
+.checkout .hero p {
     font-family: Source Serif Pro;
     font-size: 25px;
-    color: white;
-    padding: 15px 0;
-    align-content: center;
+    color: rgba(255, 248, 248, 1);
+    /* padding: 15px 0; */
+    /* align-content: center; */
 }
 
-.total p {
-    font-family: Source Serif Pro;
-    font-size: 25px;
+input.btn {
+    background-color: white;
     color: rgba(149, 106, 106, 1);
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: 50px auto;
+    padding: 7px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    /* position: absolute;
+    bottom: 0px;
+    left: 15px; */
 }
 
-.total hr{
-    color: rgba(149, 106, 106, 1)
+input.btn:hover {
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(149, 106, 106, 1);
+    border: 1px solid white;
+    color: white
 }
 
-/*--------------------------------------------------------------
-# Main and Hero and Content
---------------------------------------------------------------*/
-
-.main {
-    height: 100vh;
+input.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
-.hero .home {
+.content {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+}
+
+.event hr {
+    border: 1px solid rgba(149, 106, 106, 1);
+    ;
+    width: 100%;
+}
+
+.event .home {
     color: rgba(149, 106, 106, 1);
     right: 60px;
     position: absolute;
 }
 
-.main a {
-    font-family: Source Serif Pro;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(149, 106, 106, 1);
-}
-
-.main h1 {
-    letter-spacing: 2px;
-    font-size: 27px;
-    font-weight: bold;
-}
-
-.main td {
-    font-family: Source Serif Pro;
-    font-size: 25px;
-    color: rgba(149, 106, 106, 1);
-    padding: 15px 0;
-}
-
-.bg-image td, .bg-image h1{
-    color: rgba(255, 248, 248, 1);
-}
-
-.hero .first{
-    border-top: 3px solid rgba(149, 106, 106, 0.3);
-}
-
-.hero .last{
-    border-bottom: 3px solid rgba(149, 106, 106, 0.6);
-}
-
-.bg-image {
-    background-color: rgba(149, 106, 106, 1);
-}
-
-.bg-image .back-arrow {
+.back-arrow {
     font-size: 40px;
     position: absolute;
     top: 20px;
-}
-
-.bg-image .edit-icon, .bg-image .next-icon{
-    width: 60px;
-    height: 60px;
-}
-
-.bg-image .check-1{
-    display: block;
-}
-
-.bg-image .check-2{
-    display: none;
-}
-
-.bg-image .check-3{
-    display: none;
-}
-
-.s3-h2 {
-    letter-spacing: 2px;
-    font-size: 21px;
-    font-weight: normal;
     color:rgba(255, 248, 248, 1);
 }
 
-.s3-h3 {
-    letter-spacing: 2px;
-    font-size: 17px;
-    font-weight: normal;
-    color: rgba(255, 248, 248, 1);
+.full-height{
+    height: 100vh;
 }
 
-.main .s3-a {
-    font-family: Source Serif Pro;
-    font-weight: bold;
-    font-size: 30px;
+.setColor{
     color: rgba(149, 106, 106, 1);
-    background-color: rgba(255, 248, 248, 1);
 }
-

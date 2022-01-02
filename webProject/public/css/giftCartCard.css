@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+    # Event Section
+--------------------------------------------------------------*/
+
+.event {
+    font-family: Source Serif Pro;
+    color: rgb(139, 87, 87);
+}
+
+.event .hero a {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.event .hero h1 {
+    letter-spacing: 2px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.event hr {
+    border: 1px solid rgba(149, 106, 106, 1);
+}
+
+.single-item {
+    border: 1px solid rgba(149, 106, 106, 0.5);
+    margin: 10px auto;
+}
+
+.left-set,
+.right-set {
+    position: relative;
+}
+
+.left-set {
+    float: left;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.less-padding{
+    padding-top: 0;
+}
+
+.right-set {
+    float: right;
+    padding: 2rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    margin: 15px 5px;
+    width: 150px;
+}
+
+.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    height: 630px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.event hr {
+    border: 1px solid rgba(149, 106, 106, 1);
+    ;
+    width: 100%;
+}
+
+.remove{
+    background-color: rgba(149, 106, 106, 1);
+    color: rgba(255, 248, 248, 1);
+    border: none;
+    font-family: Source Serif Pro;
+    font-size: 22px;
+}
+
+.remove:hover{
+    background-color: rgba(160,120,120,1);
+    margin: 0;
+}

@@ -29,3 +29,4 @@ require __DIR__.'/steps.php';
 require __DIR__.'/account.php';
 require __DIR__.'/events.php';
 require __DIR__.'/checkout.php';
+require __DIR__.'/gifts.php';

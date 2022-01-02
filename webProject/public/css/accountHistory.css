@@ -167,3 +167,9 @@
     overflow: auto;
     max-height: 85vh;
 }
+
+.historyImage{
+    object-fit: cover;
+    width:80px;
+    height: 80px;
+}

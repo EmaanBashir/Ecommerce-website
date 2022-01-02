@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 Route::get('/account/accountHistory', function () {
-    return view('account.accountHistory', ['orders'=>Auth::user()->events]);
+    return view('account.accountHistory', ['orders'=>Auth::user()->events, 'eventHistory' => true, 'giftHistory' => false]);
 })->middleware(['auth'])->name('accountHistory');
 
 Route::get('/account/{event_id}', function (Request $request) {

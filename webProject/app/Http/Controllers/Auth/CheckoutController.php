@@ -16,6 +16,6 @@ class CheckoutController extends Controller
     public function create(Request $request) {
 
         $event = Event::find($request->event_id);
-        return view('payment.payment', ['event' => $event]);
+        return view('payment.payment', ['event' => $event, 'orders' => []]);
     }
 }

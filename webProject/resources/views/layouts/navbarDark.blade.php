@@ -10,7 +10,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="{{route('eventDecor')}}">Event Decor</a></li>
-          <li><a class="nav-link scrollto" href="#">Gifts</a></li>
+          <li><a class="nav-link scrollto" href="{{route('gifts')}}">Gifts</a></li>
           <li><a class="nav-link scrollto" href="{{ route('aboutus') }}">About</a></li>
           <li>
             @auth
@@ -24,11 +24,14 @@
               <x-slot name="content">
                 <!-- Authentication -->
                 <x-dropdown-link :href="route('account')">
-                    {{ __('Account') }}
-                  </x-dropdown-link>
-                  <x-dropdown-link :href="route('accountHistory')">
-                    {{ __('My orders') }}
-                  </x-dropdown-link>
+                  {{ __('Account') }}
+                </x-dropdown-link>
+                <x-dropdown-link :href="route('accountHistory')">
+                  {{ __('Event History') }}
+                </x-dropdown-link>
+                <x-dropdown-link :href="route('giftOrderHistory')">
+                  {{ __('Gift History') }}
+                </x-dropdown-link>
                 <form method="POST" action="{{ route('logout') }}">
                   @csrf
 

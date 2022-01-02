@@ -1,0 +1,141 @@
+    /* colors 
+white
+DARK BROWN: rgba(149, 106, 106, 1);
+LIGHT WHEATISH :  rgba(255, 248, 248, 1); */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 0.6rem;
+        color: rgba(149, 106, 106, 1);
+    }
+    
+    body {
+        background-color: rgb(255, 248, 248, 1);
+        font-family: "Open Sans", sans-serif;
+        ;
+    }
+    
+    button {
+        font-family: "Open Sans", sans-serif;
+    }
+    /* .card-group {
+    display: flex;
+} */
+    
+    .gifts {
+        border: 2px solid rgba(149, 106, 106, 1);
+        /* height: 1000px; */
+        width: 90%;
+        margin: auto;
+    }
+    /* HEADER */
+    
+    .dHeader {
+        border-bottom: 2px solid rgba(149, 106, 106, 1);
+        margin: 5px;
+        padding: 5px;
+        position: relative;
+    }
+    
+    .dHeader .form-select {
+        background-color: rgba(255, 248, 248, 1);
+        color: rgba(149, 106, 106, 1);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    .dBody button:hover button:focus {
+        border: none;
+        outline: none;
+    }
+    
+    input[type="text"] {
+        border: 1px solid rgb(213 192 192);
+        border-radius: 15px;
+        background-color: rgba(255, 248, 248, 1);
+        color: rgba(149, 106, 106, 1);
+        padding: 5px 10px;
+        position: absolute;
+        top: 4px;
+        right: 80px;
+        cursor: pointer;
+    }
+    
+    input:focus {
+        border: 1px solid rgba(149, 106, 106, 1);
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    .cartIcon {
+        position: absolute;
+        top: -24px;
+        right: -20px;
+        width: 100px;
+    }
+    /* PRODUCT LISTING */
+    
+    .card {
+        margin: 30px;
+    }
+    
+    .card-body {
+        margin: 0;
+        padding: 10px 20px;
+    }
+    
+    .card-body p {
+        color: rgba(149, 106, 106, 1);
+        font-weight: bold;
+    }
+    
+    .card-body h5 {
+        color: rgba(149, 106, 106, 1);
+        ;
+    }
+    
+    .btn {
+        background-color: rgba(149, 106, 106, 1);
+        color: rgb(255, 248, 248, 1);
+        /* border-radius: 20px; */
+        /* margin: 25px 0; */
+        /* padding: 7px 15px; */
+        font-weight: bold;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        color: rgba(149, 106, 106, 1);
+        background-color: rgb(255, 248, 248, 1);
+        border: 2px solid rgba(149, 106, 106, 1);
+        outline: none;
+    }
+    
+    .btn:focus {
+        box-shadow: none;
+    }
+    
+    img:hover {
+        opacity: 0.5;
+    }
+    /* PAGINATION */
+    
+    .page-link {
+        color: rgba(149, 106, 106, 1);
+        background-color: rgb(255, 248, 248, 1);
+    }
+
+    .gift-heading{
+        margin-top: 170px;
+    }

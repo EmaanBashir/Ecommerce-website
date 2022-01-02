@@ -37,10 +37,9 @@
     <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-
     <link href="{{ asset('css/payStepBar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/eventPayment.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/payment1.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/giftCartCard.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: FlexStart - v1.9.0
@@ -86,14 +85,14 @@
                         @include('layouts.paymentstep3')
 
                         <div class="end-bar">
-                        <div class="row">
-                            <div class="col-6 text-start">
-                                <a class="text-start edit-a" href="#" onclick="editPressed()"><img src="{{asset('img/account/editimage.jpg')}}" class="rounded-circle edit-icon"></a>
+                            <div class="row">
+                                <div class="col-6 text-start">
+                                    <a class="text-start edit-a" href="#" onclick="editPressed()"><img src="{{asset('img/account/editimage.jpg')}}" class="rounded-circle edit-icon"></a>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <a class="text-center next-step" href="step2" onclick="step2();return false;"><img src="{{asset('img/payment/pic1.jpg')}}" class="rounded-circle next-icon"></a>
+                                </div>
                             </div>
-                            <div class="col-6 text-end">
-                                <a class="text-center next-step" href="step2" onclick="step2();return false;"><img src="{{asset('img/payment/pic1.jpg')}}" class="rounded-circle next-icon"></a>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -105,6 +104,7 @@
                 <a href="{{route('home')}}" class="home me-3">
                     <span class="fa fa-home display-5 position-absolute my-4"></span>
                 </a>
+                @if($event)
                 <div class="d-flex flex-column justify-content-center h-100">
                     <div class="text-center my-5">
                         <h1>Event Details</h1>
@@ -149,6 +149,52 @@
                     </div>
 
                 </div>
+                @elseif($orders)
+                <div class="container-fluid scroll">
+                    <div class="d-flex flex-column justify-content-around">
+                        <div class="text-center mt-5">
+                            <h1>My Cart</h1>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <div class="my-5">
+                            @php
+                            $total = 0;
+                            @endphp
+
+                            @foreach($orders as $order)
+                            <div class="single-item">
+                                <div class="left-set col-6 ps-3 less-padding">
+                                    <img src="{{asset($order->gift->image)}}" alt="" srcset="">
+                                </div>
+                                <div class="right-set col-6">
+                                    <div class="lead fw-bold">{{$order->gift->name}}</div>
+                                    <div class="">{{$order->gift->name}}</div>
+                                    <div class="">Vase-{{$order->vase?'Yes':'No'}}</div>
+                                    <div class="">QTY: {{$order->quantity}}</div>
+                                    <div class="lead fw-bold text-end">Rs. {{$order->gift->price}}</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            @php
+                            $total += $order->gift->price * $order->quantity;
+                            @endphp
+
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <hr>
+                        <br>
+                        <div>
+                            <div class="d-flex justify-content-between total">
+                                <p class="text-center">Total</p>
+                                <p>Rs. {{$total}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endif
             </div><!-- End -->
 
         </div>

@@ -45,7 +45,7 @@
         <div class="row no-gutter">
             <!-- The image half -->
             <div style="background-image: url('{{ asset('img/account/Frame 39.png')}}');" class="col-md-5 d-flex d-md-flex flex-column text-center align-items-center justify-content-evenly bg-image py-4">
-                <div class="text-start w-100"><a href="{{ url()->previous() }}" class="back-arrow"><i class="text-pink fa fa-angle-left px-3"></i></a></div>
+                <div class="text-start w-100 d-none d-md-inline"><a href="{{ url()->previous() }}" class="back-arrow"><i class="text-pink fa fa-angle-left px-3"></i></a></div>
                 <img src="{{asset('img/profile.jpg')}}" class="rounded-circle img-fluid col-3 mb-5">
                 <div class="w-100">
                     <h2 class="text-start text-pink"><i class="fa fa-user-circle text-pink my-3 ps-5"></i>&nbsp;&nbsp;{{Auth::user()->username}}</h2>
@@ -60,15 +60,16 @@
 
             <!-- The content half -->
             <div class="col-md-7 content">
-                <a href="{{route('home')}}" class="home">
+                <a href="{{route('home')}}" class="home d-md-inline d-none">
                     <span class="fa fa-home display-5 position-absolute"></span>
                 </a>
                 <div class="login d-flex align-items-center py-5">
 
                     <!-- Demo content-->
                     <div class="container vertical-scrollable">
-                        <div class="row" >
+                        <div class="row">
                             <div class="row text-center d-flex flex-column justify-content-center">
+                                @if($eventHistory)
                                 <h3 class="signup mb-5 col-lg-10 col-xl-7 mx-auto">Order History</h3>
                                 @if($orders)
                                 <table class="col-11">
@@ -92,10 +93,43 @@
                                     </tbody>
                                 </table>
                                 @else
-                                <h4 class = "my-5"><i class="bi bi-emoji-frown"></i> You have no order history</h4>
+                                <h4 class="my-5"><i class="bi bi-emoji-frown"></i> You have no order history</h4>
                                 <div class="text-center mt-5">
                                     <button class="save rounded-pill" onclick="location.href='{{route('steps')}}'">ORDER NOW</button>
                                 </div>
+                                @endif
+
+                                @elseif('giftHistory')
+
+                                <h3 class="signup mb-5 col-lg-10 col-xl-7 mx-auto">Order History</h3>
+                                @if($orders)
+                                <table class="col-11">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Color</th>
+                                            <th>Qty.</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="align-top">
+                                        @foreach($orders as $order)
+                                        <tr onclick="window.location='{{ route('giftPage', $order->gift_id) }}'">
+                                            <td> <img src="{{asset($order->gift->image)}}" class = "img-fluid historyImage me-3"> {{$order->gift->name}}</td>
+                                            <td>{{$order->color->color}}</td>
+                                            <td>{{$order->quantity}}</td>
+                                            <td>{{$order->gift->price}}</td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                                @else
+                                <h4 class="my-5"><i class="bi bi-emoji-frown"></i> You have no order history</h4>
+                                <div class="text-center mt-5">
+                                    <button class="save rounded-pill" onclick="location.href='{{route('gifts')}}'">ORDER NOW</button>
+                                </div>
+                                @endif
+
                                 @endif
                             </div>
                         </div>
@@ -106,7 +140,7 @@
 
         </div>
     </div>
-    <script src = "{{asset('js/account.js')}}"></script>
+    <script src="{{asset('js/account.js')}}"></script>
 </body>
 
 </html>
